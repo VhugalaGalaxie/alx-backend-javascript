@@ -23,7 +23,7 @@ class StudentsController {
       });
   }
 
-  static getAllStudentsByMajor (request, response, DATABASE) {
+  static getAllStudentsByMajor(request, response, DATABASE) {
     const { major } = request.params;
 
     if (major !== 'CS' && major !== 'SWE') {
